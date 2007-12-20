@@ -16,6 +16,7 @@ Buildrequires:	perl-devel
 %endif
 Buildrequires:	perl-Image-Base
 Buildarch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This class module provides basic load, manipulate and save functionality for
