@@ -1,7 +1,7 @@
 %define module	Image-Xpm
 %define name	perl-%{module}
 %define version 1.09
-%define release %mkrel 11
+%define release %mkrel 12
 
 Name:		%{name}
 Version:	%{version}
@@ -16,7 +16,7 @@ Buildrequires:	perl-devel
 %endif
 Buildrequires:	perl-Image-Base
 Buildarch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This class module provides basic load, manipulate and save functionality for
