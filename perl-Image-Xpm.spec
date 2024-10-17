@@ -8,7 +8,7 @@ Release:	4
 Summary:	Load, create, manipulate and save xpm image files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/S/SU/SUMMER/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
