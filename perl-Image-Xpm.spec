@@ -1,15 +1,15 @@
 %define upstream_name	 Image-Xpm
-%define upstream_version 1.12
+%define upstream_version 1.13
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Load, create, manipulate and save xpm image files
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://search.cpan.org/CPAN/authors/id/S/SU/SUMMER/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/eserte/image-xpm
+Source0:	https://cpan.metacpan.org/authors/id/S/SR/SREZIC/Image-Xpm-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
