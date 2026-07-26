@@ -1,15 +1,13 @@
 %define upstream_name	 Image-Xpm
-%define upstream_version 1.13
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	1.13
+Release:	2
 
 Summary:	Load, create, manipulate and save xpm image files
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/eserte/image-xpm
-Source0:	https://cpan.metacpan.org/authors/id/S/SR/SREZIC/Image-Xpm-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SR/SREZIC/Image-Xpm-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ information on adding your own functionality to all the Image::Base derived
 classes.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -57,9 +55,7 @@ make test
 
 * Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 1.90.0-1mdv2010.0
 + Revision: 402545
-- rebuild using %%perl_convert_version
-
-* Wed Oct 01 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-12mdv2009.0
+- rebuild using %1.13 Wed Oct 01 2008 Oden Eriksson <oeriksson@mandriva.com> 1.09-12mdv2009.0
 + Revision: 290410
 - rebuild
 
